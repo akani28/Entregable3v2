@@ -5,7 +5,7 @@ import ResidentCard from "./ResidentCard";
 const Location = ({ location }) => {
   return (
     <>
-      <section className=" bg-[url(bgheader.png)] text-green-600 p-1 text-center border-green-400 border-[2px] m-2">
+      <section className=" bg-[url(/public/bgheader.png)] text-green-600 p-1 text-center border-green-400 border-[2px] m-2">
         <section>
           <div>¡Wellcome to {location?.name}!</div>
         </section>
