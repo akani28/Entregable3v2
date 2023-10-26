@@ -35,12 +35,12 @@ function App() {
 
   return (
     <>
-      <main className=" h-full p-x-4">
-        <div className="text-center relative top-[-15px] w-screen">
-          <img className=" p-2" src="headerbg.png" alt="" />
+      <main className="w-[95%] max-w-[330px] mx-auto h-full px-1 md:max-w-3xl">
+        <div className="text-center relative top-[-15px] w-screen mx-auto">
+          <img className="max-w-[50%]" src="headerbg.png" alt="" />
         </div>
         
-        <form className="flex m-3 text-center border-green-500 border-2 " onSubmit={handleSubmit}>
+        <form className="flex m-3 text-center border-green-500 border-2 md:w-[60%] md:mx-auto" onSubmit={handleSubmit}>
           <input className="w-3/4 p-1 outline-none bg-black text-gray-400 placeholder:text-center" value={idLocation} onChange={handleOnChange} placeholder="Type a location id..." type="text" />
           <button className="bg-green-400 w-1/4 p-2" onClick={handleClick}>
           <svg

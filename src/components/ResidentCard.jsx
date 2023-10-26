@@ -13,10 +13,10 @@ const ResidentCard = ({ residentLocation }) => {
       .catch((err) => console.log(err));
   }, []);
   return (
-    <div className="text-white flex flex-wrap justify-center items-center border-green-500 border-[3px] m-3">
+    <div className="md:w-[100%] md:mx-auto md:border-green-500 md:border-[3px] text-white flex justify-center items-center border-green-500 border-[3px] m-3">
       <section className="">
-        <div className="mb-[-30px]">
-          <img src={resident?.image} alt="" />
+        <div className="mb-[-20px]">
+          <img className="md:w-[100%]" src={resident?.image} alt="" />
         </div>
         <div className="relative items-center  w-[150px] left-[70px] bottom-[80px] bg-black bg-opacity-70 flex justify-center   gap-4 border-green-500 border-2">
           {resident?.status === "Alive" && (
