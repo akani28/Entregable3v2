@@ -15,7 +15,7 @@ const ResidentCard = ({ residentLocation }) => {
   return (
     <div className="text-white flex flex-wrap justify-center items-center border-green-500 border-[3px] m-3">
       <section className="">
-        <div className="mb-1">
+        <div className="mb-[-30px]">
           <img src={resident?.image} alt="" />
         </div>
         <div className="relative items-center  w-[150px] left-[70px] bottom-[80px] bg-black bg-opacity-70 flex justify-center   gap-4 border-green-500 border-2">
@@ -31,7 +31,7 @@ const ResidentCard = ({ residentLocation }) => {
 
           <span>{resident?.status}</span>
         </div>
-        <article>
+        <article className="bg-transparent">
           <div className="text-center">
             <h3>{resident?.name}</h3>
           </div>

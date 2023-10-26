@@ -35,7 +35,10 @@ function App() {
 
   return (
     <>
-      <main className="bg-[#000000] p-4">
+      <main className=" h-full p-x-4">
+        <div className="text-center relative top-[-15px] w-screen">
+          <img className=" p-2" src="headerbg.png" alt="" />
+        </div>
         
         <form className="flex m-3 text-center border-green-500 border-2 " onSubmit={handleSubmit}>
           <input className="w-3/4 p-1 outline-none bg-black text-gray-400 placeholder:text-center" value={idLocation} onChange={handleOnChange} placeholder="Type a location id..." type="text" />
